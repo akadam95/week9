@@ -43,9 +43,9 @@ class UserDB {
         $u_p = $u->getUserPassword();
         
         $mysqlquery = 'UPDATE accounts SET password= :u_p WHERE id = :u_id';
-        $t = $db->prepare($query);
+        $t = $db->prepare($mysqlquery);
         $t->bindValue(':u_id', $u_id);
-        $t->bindValue(':u_pa', $u_p);
+        $t->bindValue(':u_p', $u_p);
         $t->execute();
         $t->closeCursor();
  }

@@ -2,9 +2,9 @@
 
 class Database {
 
-private static $dsn = 'mysql:host=sql1.njit.edu;dbname=rrr36';
-private static $username = 'rrr36';
-private static $password = 'RV1oUgoVS';
+private static $dsn = 'mysql:host=sql2.njit.edu;dbname=ak985';
+private static $username = 'ak985';
+private static $password = 'XwA5ITTI';
 
 private static $db;
 private function _construct() {}
@@ -22,6 +22,7 @@ public static function getDB (){
       }
     }
     return self::$db;
-  }
+    }
 }
  
+?>

@@ -10,12 +10,12 @@ private $u_bith;
 private $u_gen;
 private $u_p;
 
-public function _construct($i,$e,$f,$l,$p,$b,$g,$p) {
+public function _construct($i,$e,$f,$l,$p1,$b,$g,$p) {
   $this->u_id = $i;
   $this->u_mail = $e;
   $this->uf_name = $f;
   $this->ul_name = $l;
-  $this->u_phn = $p;
+  $this->u_phn = $p1;
   $this->u_bith = $b;
   $this->u_gen = $g;
   $this->u_p = $p;
@@ -56,8 +56,8 @@ public function getUserPhone(){
   return $this->u_phn;
   }
   
-public function setUserPhone($p){
-    $this->u_phn = $p;
+public function setUserPhone($p1){
+    $this->u_phn = $p1;
 }
 
 public function getUserBirthday(){
